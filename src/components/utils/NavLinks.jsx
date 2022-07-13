@@ -1,33 +1,41 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import NavLink from './NavLink'
-import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-const NavLinks = () => {
+const Links = () => {
   return (
-    
-      <BrowserRouter>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About Us</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink to="/services">Services</NavLink>
-        </li>
-        <li>
-          <NavLink to="/reviews">Reviews</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-      </BrowserRouter>
+    <>
+      <li>
+        <Link activeClassName="active" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link activeClassName="active" to="/about">
+          About Us
+        </Link>
+      </li>
+      <li>
+        <Link activeClassName="active" to="/projects">
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link activeClassName="active" to="/services">
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link activeClassName="active" to="/reviews">
+          Reviews
+        </Link>
+      </li>
+      <li>
+        <Link activeClassName="active" to="/contact">
+          Contact
+        </Link>
+      </li>
+    </>
   )
 }
 
-
-export default NavLinks
+export default Links

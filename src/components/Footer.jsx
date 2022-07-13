@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import logoLight from '../assets/logo_transparent_light.png'
 import NavLinks from './utils/NavLinks'
+import { Link } from 'gatsby'
 
 const Footer = () => {
   return (
     <FooterStyles id="footer">
       <div className="container">
         <div className="left-section">
-          <a className="logo" href="/index.html">
+          <Link className="logo" to="/">
             <img
               loading="lazy"
               decoding="async"
@@ -17,7 +18,7 @@ const Footer = () => {
               width="264"
               height="78"
             />
-          </a>
+          </Link>
           <p>
             Proudly serving North Grenville since 1991.
           </p>

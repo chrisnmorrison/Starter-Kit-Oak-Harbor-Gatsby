@@ -5973,13 +5973,6 @@ gatsby-plugin-less@^6.18.0:
     "@babel/runtime" "^7.15.4"
     less-loader "^6.2.0"
 
-gatsby-plugin-load-script@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-load-script/-/gatsby-plugin-load-script-1.1.0.tgz#b73dc8248ad0e3565d3f848bfd1ecd64f2b7aad2"
-  integrity sha512-EoXUtWX4aBO4zD61xMHIIlQti4FNYmH0KgBkhac+kNMLI64cjzLc0iD7zPrFnzjYR454XAN/GJBa7M7N/VYSpw==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
-
 gatsby-plugin-page-creator@^4.18.0:
   version "4.18.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.18.0.tgz#5b2edef3edcc8aeb7e057081ab773accf2cdcfe1"

@@ -27,37 +27,32 @@ const Layout = ({ children }) => {
       <link rel="icon" type="image/png" href={siteIcon} sizes="16x16" alt='Site icon' />
       </Helmet>
       <SEO />
-      <MobileMenu isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <main>{children}</main>
-      <Footer />
-      <FooterScripts />
+       <MobileMenu isOpen={isOpen} toggle={toggle} /> 
+       <Navbar toggle={toggle} /> 
+       <main>{children}</main> 
+       <Footer />
+      <script src='../../static/js/scroll.js'/>
 
     </>
   )
 }
 
-export const FooterScripts = () => {
-  return (
-    <>
-    <script>
-      
+// export const FooterScripts = () => {
+//   return (
+//     <>
 
-    
-        </script>
-
-      <script defer>
-        {document.addEventListener('scroll', e => {
-          const scroll = document.documentElement.scrollTop
-          if (scroll >= 100) {
-            document.querySelector('body').classList.add('scroll')
-          } else {
-            document.querySelector('body').classList.remove('scroll')
-          }
-        })}
-      </script>
-    </>
-  )
-}
+//       <script defer>
+//         {document.addEventListener('scroll', e => {
+//           const scroll = document.documentElement.scrollTop
+//           if (scroll >= 100) {
+//             document.querySelector('body').classList.add('scroll')
+//           } else {
+//             document.querySelector('body').classList.remove('scroll')
+//           }
+//         })}
+//       </script>
+//     </>
+//   )
+// }
 
 export default Layout
