@@ -1,6 +1,5 @@
 import React from 'react'
-import cabinets from '../../assets/cabinets2.jpg'
-import cabinetsMob from '../../assets/cabinets2-m.jpg'
+
 import { StaticImage } from 'gatsby-plugin-image'
 
 const CTA = () => {

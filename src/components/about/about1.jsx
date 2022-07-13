@@ -1,6 +1,4 @@
 import React from 'react'
-import aboutImg from '../../assets/about1.jpg'
-import aboutImgMob from '../../assets/about1-m.jpg'
 import { StaticImage } from 'gatsby-plugin-image'
 import check from '../../assets/check.svg'
 import { Link } from 'gatsby'
