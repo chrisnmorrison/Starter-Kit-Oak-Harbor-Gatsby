@@ -31,7 +31,6 @@ const Layout = ({ children }) => {
        <Navbar toggle={toggle} /> 
        <main>{children}</main> 
        <Footer />
-      <script src='../../static/js/scroll.js'/>
 
     </>
   )

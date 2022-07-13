@@ -20,11 +20,12 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-            <picture>
+            {/* <StaticImage src='../../assets/hero.jpg'/> */}
+            {/* <picture>
                 <source media="(max-width: 600px)" srcset={landing}/>
                 <source media="(min-width: 601px)" srcset={landing}/>
                 <img aria-hidden="true" decoding="async" src={landing} alt="new home" width="275" height="132"/>
-             </picture>
+             </picture> */}
         </section>
      
     </HeroStyles>

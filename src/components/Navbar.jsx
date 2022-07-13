@@ -27,8 +27,8 @@ const Navbar = ({ toggle }) => {
               src={logoLight}
               decoding="async"
               alt="logo"
-              width={221}
-              height={66}
+              width={745}
+              height={268}
             />
             <img
               className="dark"
