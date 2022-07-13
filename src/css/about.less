@@ -1,0 +1,152 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #sidebyside {
+    padding: 50px 0;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content {
+      order: 2;
+      margin: auto;
+      margin-top: 75/16em;
+      max-width: 611/16em;
+
+      h2 {
+        font-size: 32/16em;
+        margin-bottom: 42/48em;
+        margin-top: 42/38em;
+      }
+
+      p {
+        margin-bottom: 20/18em;
+      }
+
+      ul {
+        padding-left: 20/16em;
+        margin-bottom: 20/16em;
+
+        li {
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-bottom: 0.3rem;
+          img {
+            margin-right: 10/16em;
+            margin-top: 4/18em;
+
+            fill: green;
+          }
+        }
+
+        svg {
+          fill: var(--primary);
+        }
+      }
+
+      .button-solid {
+        margin-top: 25/14em;
+      }
+    }
+
+    .image-box {
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 711/16em;
+      height: 861/16em;
+      font-size: ~'min(1.4vw, 1em)'; // scales the image-box down
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: var(--primary);
+        opacity: 1;
+        top: 40/16em;
+        left: -40/16em;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 516/16em;
+        width: 460/16em;
+        background: url('../assets/content-circles.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        top: -226/16em;
+        right: -109/16em;
+        z-index: -1;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+  #sidebyside {
+    padding: 100/16em 0;
+  }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #sidebyside {
+    padding: 150/16em 0;
+    .container {
+      max-width: 1391/16em;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .content {
+      margin: 0;
+      width: 60%;
+    }
+
+    .image-box {
+      margin: 0;
+      margin-right: 170/16em;
+    }
+  }
+}
+
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+}
