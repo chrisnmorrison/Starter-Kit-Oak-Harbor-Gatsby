@@ -46,15 +46,15 @@ const SEO = ({ title, description, image, article }) => {
         {
           "@context": "https://schema.org/",
           "@type": "Organization",
-          "description: "Free and Open Education Resources",
-          "url": "https://openeducation.one",
-          "homepage": "https://openeducation.one",
+          "description: "",
+          "url": "",
+          "homepage": "",
           "name": "Open Education",
-          "email": "mailto:opendotone@gmail.com",
+          "email": "mailto:",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+5-601-785-8543",
-            "contactType": "Customer Support"
+            "telephone": "",
+            "contactType": ""
           }
         }
       `}

@@ -11,10 +11,10 @@ module.exports = {
     title: 'Small Business',
     titleTemplate: '%s - Proudly serving Ottawa',
     description: 'Insert business description here',
-    url: 'https://www.openeducation.one', // No trailing slash allowed!
+    url: 'https://terra-gatsby.netlify.app', // No trailing slash allowed!
     image: '/logo.png', // Path to the image placed in the 'static' folder, in the project's root directory.
-    twitterUsername: '@opendotone',
-    defaultTitle: 'Open Education',
+    twitterUsername: '',
+    defaultTitle: 'Terra',
   },
 
   plugins: [

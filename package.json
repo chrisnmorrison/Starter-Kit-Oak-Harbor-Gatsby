@@ -1,8 +1,8 @@
 {
-  "name": "openeducation",
-  "description": "A free",
+  "name": "Terra Demo Site",
+  "description": "",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
