@@ -4,22 +4,15 @@ import NavLinks from './utils/NavLinks'
 import styled from 'styled-components'
 import logoDark from '../assets/logo_transparent.png'
 import logoLight from '../assets/logo_transparent_light.png'
-import {CgMenuLeft} from 'react-icons/cg'
+import { CgMenuLeft } from 'react-icons/cg'
 
 const Navbar = ({ toggle }) => {
   return (
     <>
       <div id="navigation">
-        <div aria-hidden="true" className="background-color-div">
-       
-        </div>
+        <div aria-hidden="true" className="background-color-div"></div>
         <div className="container">
-       
-          <Link
-            className="logo"
-            aria-label="click to go to home page"
-            to="/"
-          >
+          <Link className="logo" aria-label="click to go to home page" to="/">
             <img
               className="light"
               aria-hidden="true"
@@ -40,15 +33,35 @@ const Navbar = ({ toggle }) => {
               height={66}
             />
           </Link>
-          <nav id="navbar-menu" >
+          <nav id="navbar-menu">
             <ul>
-             <NavLinks/>
+              <NavLinks />
             </ul>
           </nav>
-         
+
           <button className="toggle-btn hamburger-menu" onClick={toggle}>
-            <CgMenuLeft size={28}/>
+            <CgMenuLeft size={28} />
           </button>
+          {/* <button id="dark-mode-toggle">
+            <svg
+              className="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 480 480"
+              style={{ enableBackground: 'new 0 0 480 480' }}
+              xmlSpace="preserve"
+            >
+              <path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img
+              className="sun"
+              aria-hidden="true"
+              src="/images/sun.svg"
+              decoding="async"
+              alt="moon"
+              width={15}
+              height={15}
+            />
+          </button> */}
         </div>
       </div>
     </>
@@ -177,11 +190,10 @@ Navbar
       transform: translateY(-5px);
     }
   }
-  .toggle-btn > svg:nth-child(1){
- height: auto;
- width: 3rem;
-}
-  
+  .toggle-btn > svg:nth-child(1) {
+    height: auto;
+    width: 3rem;
+  }
 `
 
 export default Navbar

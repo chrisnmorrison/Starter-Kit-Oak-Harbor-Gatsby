@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
       <link rel="icon" type="image/png" href={siteIcon} sizes="16x16" alt='Site icon' />
+      
       </Helmet>
       <SEO />
        <MobileMenu isOpen={isOpen} toggle={toggle} /> 

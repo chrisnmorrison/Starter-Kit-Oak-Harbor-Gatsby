@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
@@ -23,8 +23,8 @@ export default function HTML(props) {
         {props.postBodyComponents}
       </body>
       <script
-  dangerouslySetInnerHTML={{
-    __html: `
+        dangerouslySetInnerHTML={{
+          __html: `
     document.addEventListener('scroll', e => {
       const scroll = document.documentElement.scrollTop
       if (scroll >= 100) {
@@ -34,9 +34,11 @@ export default function HTML(props) {
       }
     })
     
+
         `,
-  }}
-/>
+        }}
+      />
+
     </html>
   )
 }
