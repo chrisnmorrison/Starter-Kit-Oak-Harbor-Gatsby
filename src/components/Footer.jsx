@@ -19,15 +19,13 @@ const Footer = () => {
               height="78"
             />
           </Link>
-          <p>
-            Proudly serving North Grenville since 1991.
-          </p>
+          <p>Proudly serving North Grenville since 1991.</p>
         </div>
         <div className="right-section">
           <div className="lists">
-            <ul className='footer-links'>
+            <ul className="footer-links">
               <h2>Information</h2>
-              <NavLinks className="page-link"/>
+              <NavLinks className="page-link" />
             </ul>
             <ul>
               <h2>Services</h2>
@@ -60,7 +58,11 @@ const Footer = () => {
 
       <div className="credit">
         <span>Developed by</span>{' '}
-        <a href="https://mesmerdesign.ca" target="_blank" rel="noopener">
+        <a
+          href="https://mesmerdesign.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Mesmer Design
         </a>
         {'. '}
