@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaBars } from 'react-icons/fa'
 import NavLinks from './utils/NavLinks'
 import styled from 'styled-components'
 import logoDark from '../assets/logo_transparent.png'

@@ -16,7 +16,7 @@ const CTA = () => {
           Contact Us
         </a>
       </div>
-      <StaticImage className='cta-img' src='../../assets/cta.jpg' layout="fullWidth"/>
+      <StaticImage className='cta-img' src='../../assets/cta-img.jpg' layout="fullWidth"/>
       {/* <picture>
         <source media="(max-width: 600px)" srcSet={cabinetsMob} />
         <source media="(min-width: 601px)" srcSet={cabinets} />
