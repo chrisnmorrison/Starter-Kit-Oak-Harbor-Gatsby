@@ -11,8 +11,6 @@ import sun from '../assets/sun.svg'
 
 const Navbar = ({ toggle }) => {
   useEffect(() => {
-    
-
     // Dark Mode JS
     var body = document.querySelector('body')
     const darkModeToggle = document.querySelector('#dark-mode-toggle')
@@ -82,11 +80,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks />
             </ul>
           </nav>
-
-          <button className="toggle-btn hamburger-menu" onClick={toggle}>
-            <CgMenuLeft size={28} />
-          </button>
-          <button id="dark-mode-toggle">
+ <button id="dark-mode-toggle">
             <img
               className="moon"
               aria-hidden="true"
@@ -106,6 +100,10 @@ const Navbar = ({ toggle }) => {
               height={15}
             />
           </button>
+          <button className="toggle-btn hamburger-menu" onClick={toggle}>
+            <CgMenuLeft size={28} />
+          </button>
+         
         </div>
       </div>
     </>

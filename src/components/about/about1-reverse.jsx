@@ -1,10 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import check from '../../assets/check.svg'
-import aboutImg from '../../assets/about2.jpg'
-import aboutImgMob from '../../assets/about2-m.jpg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutReverse = () => {
+  const aboutList = [
+    'Healthy soil',
+    'Effective cover crops',
+    'Pest control',
+    'Lower water requirements',
+  ]
+
   return (
     <section id="sidebyside-reverse">
       <div className="container">
@@ -25,54 +31,22 @@ const AboutReverse = () => {
             <strong>Sustainable practices result in:</strong>
           </p>
           <ul>
-            <li>
-              <img
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src={check}
-                alt="check mark"
-                width={20}
-                height={20}
-              />
-              <span>Healthy soil</span>
-            </li>
-            <li>
-              <img
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src={check}
-                alt="check mark"
-                width={20}
-                height={20}
-              />
-              <span>Effective cover crops</span>
-            </li>
-            <li>
-              <img
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src={check}
-                alt="check mark"
-                width={20}
-                height={20}
-              />
-              <span>Pest control</span>
-            </li>
-            <li>
-              <img
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src={check}
-                alt="check mark"
-                width={20}
-                height={20}
-              />
-              <span>Lower water requirements</span>
-            </li>
+            {aboutList.map(item => {
+              return (
+                <li>
+                  <img
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src={check}
+                    alt="check mark"
+                    width={20}
+                    height={20}
+                  />
+                  <span>{item}</span>
+                </li>
+              )
+            })}
           </ul>
           <p>
             Reach out to us any time to discuss your custom project, and we're
@@ -82,19 +56,14 @@ const AboutReverse = () => {
             Get Your Free Quote
           </Link>
         </div>
-        <picture className="image-box">
-          <source media="(max-width: 600px)" srcSet={aboutImgMob} />
-          <source media="(min-width: 601px)" srcSet={aboutImg} />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src={aboutImg}
-            alt="aboutImgs"
-            width={400}
-            height={662}
+        <div className="image-box">
+          <StaticImage
+            src="../../assets/about2.jpg"
+            alt=""
+            width={1662}
+            placeholder="blurred"
           />
-        </picture>
+        </div>
       </div>
     </section>
   )

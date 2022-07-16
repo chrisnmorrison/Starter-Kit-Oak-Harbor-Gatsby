@@ -51,20 +51,41 @@ const Service = () => {
         </Link>
       </div>
       <div className="service-card card1">
-        <StaticImage src="../../assets/sustainable.png" width={80} />
-        <h3>Landscape Design</h3>
+        <div className="card-content">
+          <StaticImage src="../../assets/sustainable.png" width={80} />
+          <h3>
+            Landscape
+            <br aria-hidden="true" />
+            Design
+          </h3>
+        </div>
       </div>
       <div className="service-card card2">
-        <StaticImage src="../../assets/grass.png" width={80} />
-        <h3>Landscape Management</h3>
+        <div className="card-content">
+          <StaticImage src="../../assets/grass.png" width={80} />
+          <h3>
+            Landscape
+            <br aria-hidden="true" /> Management
+          </h3>
+        </div>
       </div>
       <div className="service-card card3">
-        <StaticImage src="../../assets/grow-plant.png" width={80} />
-        <h3>Plant & Tree Solutions</h3>
+        <div className="card-content">
+          <StaticImage src="../../assets/grow-plant.png" width={80} />
+          <h3>
+            Plant & Tree
+            <br aria-hidden="true" /> Solutions
+          </h3>
+        </div>
       </div>
       <div className="service-card card4">
-        <StaticImage src="../../assets/planter.png" width={80} />
-        <h3>Landscape Enhancements</h3>
+        <div className="card-content">
+          <StaticImage src="../../assets/planter.png" width={80} />
+          <h3>
+            Landscape
+            <br aria-hidden="true" /> Enhancements
+          </h3>
+        </div>
       </div>
     </Wrapper>
   )
@@ -73,12 +94,16 @@ const Service = () => {
 const Wrapper = styled.section`
   display: grid;
   height: 100%;
-  margin: 5rem auto !important;
+  margin: 5rem auto;
   grid-template-areas:
     'text card1 card2'
     'text card3 card4';
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2.5fr 1fr 1fr;
+
+  .card-content {
+    margin: auto;
+  }
 
   .service-text {
     grid-area: text;
@@ -177,14 +202,13 @@ const Wrapper = styled.section`
   @media screen and (max-width: 1023px) {
     display: grid;
     height: 100%;
-    margin: 5rem auto !important;
+    margin: 3rem auto;
     grid-template-areas:
       'card1 card2'
       'card3 card4'
       'text text';
     grid-template-rows: 0.2fr 0.2fr 1fr;
     grid-template-columns: 1fr 1fr;
-
 
     .card1,
     .card2 {
@@ -197,15 +221,13 @@ const Wrapper = styled.section`
     }
   }
 
-
-
   @media screen and (max-width: 645px) {
     .service-text {
       margin: 2rem 1rem;
     }
 
     h3 {
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .service-card {
@@ -221,11 +243,11 @@ const Wrapper = styled.section`
     grid-template-rows: 0.1fr 0.1fr 1fr;
 
     h3 {
-      font-size: 14px;
     }
 
     .service-card {
       margin: 0 0.4rem;
+      border: none;
     }
 
     .gatsby-image-wrapper img {
@@ -237,7 +259,6 @@ const Wrapper = styled.section`
     grid-template-rows: 0.1fr 0.1fr 1fr;
 
     h3 {
-      font-size: 14px;
       margin: 0 0.2rem;
     }
 

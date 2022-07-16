@@ -9,11 +9,14 @@ const Hero = () => {
         <div className="hero-content">
           <div className="heroText">
             <h1 id="home-h">
-              Main Keywords of What They Do, And Location If Needed
+              Terra <br /> Landscaping
             </h1>
             <p>
-              Talk about the other services they do with keywords and locations
-              where they serve. Try to make this 2-3 lines tall.
+              We are a North Grenville Landscaping Company that creates{' '}
+              <strong>beautiful</strong> outdoor living spaces, using nature to{' '}
+              <strong>inspire</strong> and the talent of our
+              team to build your vision. This is <strong>your space</strong>.
+              What do you see?
             </p>
             <Link className="button-solid" href="/contact" target="_blank">
               Contact Us

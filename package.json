@@ -22,6 +22,7 @@
     "gatsby-plugin-postcss": "^5.16.0",
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.18.0",
+    "gatsby-plugin-sass": "^5.18.1",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-plugin-styled-components": "^4.3.0",
     "gatsby-remark-images": "^6.18.0",

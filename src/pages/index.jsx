@@ -11,7 +11,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-       <Seo title="Terra" description="Serving Kemptville since 1991"/>
+       <Seo title="Home" description="Serving Kemptville since 1991"/>
       <Hero />
       <Services/>
       <About/>

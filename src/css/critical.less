@@ -87,6 +87,7 @@
                 height: 4/64em;
                 width: 97/64em;
                 background: var(--primary);
+                border-radius: 10px;
                 opacity: 1;
                 bottom: -16/64em;
                 left: 50%;
@@ -103,6 +104,26 @@
             text-align: center;
             max-width: 617/18em;
             opacity: 1;
+
+            strong{
+                position: relative;
+                font-weight: 500;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    background: var(--primary);
+                    opacity: .6;
+                    border-radius: 2px;
+                    bottom: 0.10526316em;
+                    left: 0em;
+                    right: -0.31578947em;
+                    z-index: -1;
+                }
+            }
         }
 
         .button-solid {
@@ -131,6 +152,29 @@
             display: flex;
             justify-content: space-between;
             position: relative;
+
+            p {
+                line-height: 1.55em;
+                margin: auto;
+                margin-bottom: 31/18em;
+                color: #fff;
+                width: 100%;
+                text-align: center;
+                max-width: 617/18em;
+                opacity: 1;
+    
+                strong{
+                    position: relative;
+                    font-weight: 500;
+    
+                    &:before{
+
+                        width: 100%;
+                        height: 5px;
+
+                    }
+                }
+            }
         }
     }
 }

@@ -10,18 +10,18 @@
     --primary-light: #4dcb53;
     --primary-dark: #0b470e;
     --primaryShade: #4aa24e;
- 
+    --primary-font: 'Montserrat','Poppins';
+    --secondary-font: 'Poppins', sans-serif;
     --bodyText: #1a1a1a;
   }
 
-  // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
   body,
   html {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: var(--primary-font), sans-serif;
     color: var(--bodyText);
     overflow-x: hidden;
   }
@@ -52,6 +52,7 @@
   h6 {
     margin: 0;
     color: #1a1a1a;
+    font-family: var(--secondary-font), sans-serif;
   }
 
   p,
@@ -157,9 +158,17 @@
 <--- -------------------------- -*/
 
 /* Mobile - Top Drop Down */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1097px) {
   .page-link {
     line-height: 4rem;
+  }
+
+  .moon{
+    filter: invert(1);
+  }
+
+  .hamburger-menu{
+    display: block;
   }
 
   //Navigation Styles
@@ -419,6 +428,10 @@
         }
       }
 
+      .moon{
+        filter: invert(1);
+      }
+
       #navbar-menu {
         ul {
           li {
@@ -566,10 +579,7 @@
       }
     }
 
-    // Hamburger Menu
-    .hamburger-menu {
-      display: none;
-    }
+
   }
 }
 
@@ -633,6 +643,11 @@
 
 /* Dark Mode Desktop */
 @media only screen and (min-width: 1024px) {
+
+      // Hamburger Menu
+      .hamburger-menu {
+        display: none;
+      }
   body.dark-mode {
     #navigation {
       .background-color-div {

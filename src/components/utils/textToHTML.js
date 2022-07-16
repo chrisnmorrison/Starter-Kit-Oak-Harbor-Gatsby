@@ -1,3 +1,7 @@
+// Current unused. May have use cases in future.
+// Converts plain text to an html element
+
+
 // const support = (function () {
 //   if (!window.DOMParser) return false
 //   const parser = new DOMParser()

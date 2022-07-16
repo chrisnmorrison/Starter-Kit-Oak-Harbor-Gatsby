@@ -10,7 +10,7 @@ const Services = () => {
     <Layout>
       <Seo
         title="Services"
-        description="List of our favourite, completed projects"
+        description="We offer a wide variety of landscaping and softscaping services in Kemptville and North Grenville"
       />
       <InnerHero pageName="Services" />
       <Service />

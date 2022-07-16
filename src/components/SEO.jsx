@@ -45,11 +45,11 @@ const SEO = ({ title, description, image, article }) => {
         {`
         {
           "@context": "https://schema.org/",
-          "@type": "Organization",
+          "@type": "Business",
           "description: "",
           "url": "",
           "homepage": "",
-          "name": "Open Education",
+          "name": "",
           "email": "mailto:",
           "contactPoint": {
             "@type": "ContactPoint",

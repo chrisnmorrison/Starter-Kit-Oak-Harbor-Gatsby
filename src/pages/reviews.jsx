@@ -12,8 +12,8 @@ const Reviews = () => {
   return (
     <Layout>
       <Seo
-        title="Projects"
-        description="List of our favourite, completed projects"
+        title="Reviews"
+        description="What our customers say about us"
       />
       <InnerHero pageName="Reviews" />
 
