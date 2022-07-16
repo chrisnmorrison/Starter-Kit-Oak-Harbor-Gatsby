@@ -1,4 +1,4 @@
-
+// Moved to html.js
 
 // const navbarMenu = document.querySelector("#navigation #navbar-menu");
 // const hamburgerMenu = document.querySelector("#navigation .hamburger-menu");
