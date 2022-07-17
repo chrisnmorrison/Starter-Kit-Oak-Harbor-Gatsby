@@ -9,12 +9,11 @@ import Cta from '../components/cta/cta1'
 const about = () => {
   return (
     <Layout>
-      <Seo title='About Us' description=''/>
-      <InnerHero pageName='About Us'/>
-      <About/>
-      <Vision/>
-      <Cta/>
-
+      <Seo title="About Us" description="" />
+      <InnerHero pageName="About Us" />
+      <About />
+      <Vision />
+      <Cta />
     </Layout>
   )
 }

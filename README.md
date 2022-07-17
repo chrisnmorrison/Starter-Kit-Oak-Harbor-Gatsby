@@ -63,6 +63,7 @@ This Gatsby site is ready for production, but there still a few to-do's that cou
 - Fine tuning - any way to reduce build time?
 - Create more components for more flexibility
 - Gallery on mobile works, but is a bit janky
+- Gallery should have a lightbox popup
 
 ## Contributing & License
 

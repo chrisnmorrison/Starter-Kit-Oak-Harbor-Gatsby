@@ -64,19 +64,7 @@ const About = () => {
           />
         </div>
 
-        {/* <picture className="image-box">
-          <source media="(max-width: 600px)" srcSet={aboutImgMob} />
-          <source media="(min-width: 601px)" srcSet={aboutImg} />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src={aboutImg}
-            alt="aboutImgs"
-            width={400}
-            height={662}
-          /> 
-        </picture> */}
+     
       </div>
     </section>
   )
