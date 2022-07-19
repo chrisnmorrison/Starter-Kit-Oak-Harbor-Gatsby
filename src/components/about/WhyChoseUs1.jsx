@@ -61,6 +61,7 @@ const Vision = () => {
 const Wrapper = styled.section`
   .title {
     font-size: 2rem;
+    margin: 0 auto;
   }
 
   .about-icon {
