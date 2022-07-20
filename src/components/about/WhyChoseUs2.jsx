@@ -12,6 +12,7 @@ import {
   IoContractOutline,
   IoShieldCheckmarkOutline,
 } from 'react-icons/io5'
+import leaf from '../../assets/leaf-four-1.png'
 
 const icons = [
   IoConstructOutline,
@@ -27,12 +28,12 @@ const icons = [
 const items = [
   {
     title: 'Experienced',
-    text: 'Indignation and dislike mens who are so beguiled & the demoralized.',
+    text: 'With 500+ large projects complete, we\'re always looking for a new challenge.',
   },
   {
-    title: 'Full Service Company ',
+    title: 'Full Service',
     text:
-      'We pride ourselves as a full-service landscape construction company and have a wide variety of services to choose from.',
+      'We pride ourselves as a full-service landscape construction company.',
   },
   {
     title: 'Friendly',
@@ -50,16 +51,17 @@ const items = [
       'We have a team of experienced professionals who will take care of everything for you.',
   },
   {
-    title: 'Licensed and Insured',
+    title: 'Licensed',
     text:
       "We're fully licensed and insured, so you can rest assured that your property is in good hands.",
   },
   {
     title: 'Experienced',
-    text: 'Indignation and dislike mens who are so beguiled & the demoralized.',
+    text:
+      "We've been strongly operating in the North Grenville area for 30+ years.",
   },
   {
-    title: 'High Quality Material',
+    title: 'Quality Material',
     text: 'Ensuring your project is long lasting and sturdy.',
   },
 ]
@@ -69,22 +71,19 @@ const WhyChooseUs2 = () => {
     <Wrapper>
       <div className="container">
         <div className="row first">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 row title-row">
             <div className="title">
               <h5>Why Choose Us</h5>
               <h3>Trusted Experts in North Grenville</h3>
-              <GatsbyImage
-                className="title-icon"
-                src="../../assets/leaf-four-1.png"
-                layout="fixed"
-                width={36}
-              />
+            </div>{' '}
+            <div className="title-icon-container">
+              <img className="title-icon" src={leaf} />
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <p>
+            <p className='first-right'>
               Terra is committed to promising the best quality of work and
-              highest quality materials for our clients, and helping them
+              highest quality materials for our clients, and helping our clients
               achieve the outdoor space of their dreams.
             </p>
           </div>
@@ -119,7 +118,12 @@ const Wrapper = styled.section`
   margin-bottom: 5rem;
 
   .first {
-    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+    align-items: center;
+  }
+
+  .title-row {
     align-items: center;
   }
 
@@ -136,19 +140,21 @@ const Wrapper = styled.section`
     }
   }
 
-  .sec-title .title-icon {
-    position: absolute;
-    left: 20px;
-    top: 32px;
+  .title-icon-container {
+    position: relative;
+    height: 100%;
+    margin-left: 1.2rem;
   }
-  .sec-title::before {
-    content: '';
+
+  .title-icon-container::before {
     position: absolute;
-    left: 0px;
-    top: 3px;
-    width: 40px;
-    height: 65px;
-    background: var(--primary);
+    right: -1rem;
+    top: -8px;
+    content: '';
+    background-color: var(--primary);
+    height: 110%;
+    width: 2.2rem;
+    z-index: -5;
   }
 
   .inner-box {
@@ -223,7 +229,40 @@ const Wrapper = styled.section`
   }
 
   .card-text {
-    height: 7.5rem;
+    height: 8.5rem;
+  }
+
+  @media screen and (max-width: 1378px){
+    .first{
+      margin: 0 auto 3.5rem;
+    }
+
+  
+  }
+  @media screen and (max-width: 1148px){
+    .title-icon-container{
+      display: none;
+    }
+
+  @media screen and (max-width: 767px){
+    .title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-text{
+  height: 6.5rem;
+}
+
+.first-right{
+  text-align: center;
+}
+  }
+  @media screen and (max-width: 349px){
+    .card-text{
+      height: 8.5rem;
+    }
+  }
   }
 `
 
