@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
 
 const CTA = () => {
   return (
+    <Wrapper>
     <section id="cta">
       <div className="container">
         <h2 className="title">
@@ -17,21 +19,16 @@ const CTA = () => {
         </a>
       </div>
       <StaticImage className='cta-img' src='../../assets/cta-img.jpg' layout="fullWidth"/>
-      {/* <picture>
-        <source media="(max-width: 600px)" srcSet={cabinetsMob} />
-        <source media="(min-width: 601px)" srcSet={cabinets} />
-        <img
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src={cabinets}
-          alt="kitchen cabinets"
-          width={1920}
-          height={1280}
-        />
-      </picture> */}
+
     </section>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+.gatsby-image-wrapper{
+  margin: 0;
+}
+`
 
 export default CTA

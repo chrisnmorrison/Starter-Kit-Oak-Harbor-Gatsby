@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import house from '../../assets/happy-house.png'
-import supplier from '../../assets/supplier.png'
+import house from '../../assets/icons/happy-house.png'
+import supplier from '../../assets/icons/supplier.png'
 
 const Vision = () => {
   return (

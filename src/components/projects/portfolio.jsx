@@ -74,6 +74,9 @@ const Portfolio = () => {
 
 const Wrapper = styled.div`
 
+.gatsby-image-wrapper{
+  margin: 0 0.6875em;
+}
 
 .gatsby-image-wrapper img{
   height: auto;

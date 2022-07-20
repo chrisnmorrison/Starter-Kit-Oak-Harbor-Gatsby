@@ -260,6 +260,7 @@ const Wrapper = styled.section`
 
     h3 {
       margin: 0 0.2rem;
+      font-size: 90%;
     }
 
     .service-card {
