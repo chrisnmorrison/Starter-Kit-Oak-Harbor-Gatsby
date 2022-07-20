@@ -112,10 +112,6 @@ const Wrapper = styled.section`
   width: 90px;
   height: 90px;
   margin: 0 auto 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
