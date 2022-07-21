@@ -29,6 +29,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-less`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-netlify-cms`,
 
     {
       resolve: `gatsby-transformer-remark`,
@@ -50,14 +51,6 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `1sfeg2xcbtuz`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
       },
     },
     // {
