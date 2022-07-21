@@ -6,6 +6,10 @@
 
 const path = require('path')
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Small Business',
@@ -46,6 +50,14 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `1sfeg2xcbtuz`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
       },
     },
     // {

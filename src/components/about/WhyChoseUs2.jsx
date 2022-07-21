@@ -1,7 +1,5 @@
-import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
-import { StaticImage } from 'gatsby-plugin-image'
 import { BiPackage } from 'react-icons/bi'
 import {
   IoCalendarOutline,
