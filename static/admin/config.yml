@@ -5,10 +5,13 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: content/blog
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - { label: "Featured Image", name: "image", widget: "image"}
+      - { name: date, label: Date, widget: datetime, date_format: "MMM Do, YYYY", time_format: false }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
