@@ -29,7 +29,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-less`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-netlify-cms`,
+    // `gatsby-plugin-netlify-cms`,
 
     {
       resolve: `gatsby-transformer-remark`,

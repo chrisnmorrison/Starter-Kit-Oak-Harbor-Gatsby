@@ -79,9 +79,10 @@ const Wrapper = styled.section`
     grid-template-areas:
       'title vision'
       'title mission';
-    border-right: 1px solid var(--primary-light);
-    border-top: 1px solid var(--primary-light);
-    border-bottom: 1px solid var(--primary-light);
+    border-right: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+    /* border-left: 1px solid var(--primary); */
     padding: 0;
     margin-bottom: 5rem;
   }

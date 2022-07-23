@@ -76,7 +76,7 @@ const WhyChooseUs2 = () => {
               <h3>Trusted Experts in North Grenville</h3>
             </div>{' '}
             <div className="title-icon-container">
-              <img className="title-icon" src={leaf} />
+              <img className="title-icon" src={leaf} alt='leaf icon in title'/>
             </div>
           </div>
           <div className="col-12 col-md-6">
