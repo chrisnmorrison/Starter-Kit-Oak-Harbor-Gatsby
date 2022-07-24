@@ -53,13 +53,13 @@ module.exports = {
     },
 
    
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `posts`,
-    //     path: `${__dirname}/content`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content`,
+      },
+    },
 
   ],
 }

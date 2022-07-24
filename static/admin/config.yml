@@ -1,0 +1,23 @@
+backend:
+  name: test-repo
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { label: "Featured Image", name: "image", widget: "image"}
+      - { name: date, label: Date, widget: datetime, date_format: "MMM Do, YYYY", time_format: false }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Advice", "News", "Guide", "Other"],
+        }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
