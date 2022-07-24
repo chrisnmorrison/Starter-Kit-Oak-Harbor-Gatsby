@@ -15,7 +15,7 @@ module.exports = {
     title: 'Small Business',
     titleTemplate: '%s - Terra - Proudly serving Kemptville since 1991',
     description: 'Insert business description here',
-    url: 'https://terra-gatsby.netlify.app', // No trailing slash allowed!
+    url: 'https://terra-demo-v2.netlify.app', // No trailing slash allowed!
     image: '/logo.png', // Path to the image placed in the 'static' folder, in the project's root directory.
     twitterUsername: '',
     defaultTitle: 'Terra',
@@ -29,8 +29,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-less`,
     `gatsby-plugin-postcss`,
-    // `gatsby-plugin-netlify-cms`,
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -53,6 +51,8 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+
+   
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
