@@ -31,9 +31,9 @@ const AboutReverse = () => {
             <strong>Sustainable practices result in:</strong>
           </p>
           <ul>
-            {aboutList.map(item => {
+            {aboutList.map((item,i) => {
               return (
-                <li>
+                <li key={i}>
                   <img
                     aria-hidden="true"
                     loading="lazy"
@@ -59,7 +59,7 @@ const AboutReverse = () => {
         <div className="image-box">
           <StaticImage
             src="../../assets/about2.jpg"
-            alt=""
+            alt="Landscaping picture"
             width={1662}
             placeholder="blurred"
           />

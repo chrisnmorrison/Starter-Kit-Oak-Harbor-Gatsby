@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allMdx {
+      allMarkdownRemark {
         nodes {
           frontmatter {
             title
@@ -14,29 +14,36 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      categories: allMdx {
+      category: allMarkdownRemark {
         distinct(field: frontmatter___category)
       }
     }
   `)
 
-  result.data.allMdx.nodes.forEach(({ frontmatter: { title, category } }) => {
-    slug = slugify(title, {lower:true})
-    createPage({
-      path: `/learn/${category.toLowerCase()}/${slug}`,
-      component: path.resolve(`src/templates/post-template.js`),
-      context: {
-        slug, title
-      },
-    })
-  })
+ 
 
-  result.data.categories.distinct.forEach(category => {
+  result.data.allMarkdownRemark.nodes.forEach(
+   
+    ({ frontmatter: { title, category } }) => {
+      console.log(title)
+      slug = slugify(title, { lower: true })
+      createPage({
+        path: `/${category.toLowerCase()}/${slug}`,
+        component: path.resolve(`src/templates/post-template.js`),
+        context: {
+          slug,
+          title,
+        },
+      })
+    }
+  )
+
+  result.data.category.distinct.forEach(cat => {
     createPage({
-      path: `/learn/${category.toLowerCase()}`,
+      path: `/${cat.toLowerCase()}`,
       component: path.resolve(`src/templates/category-template.js`),
       context: {
-        category,
+        cat,
       },
     })
   })

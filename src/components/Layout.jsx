@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Navbar from './Navbar'
 import Seo from './SEO'
@@ -14,16 +13,14 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-      <Head/>
+      <Head />
       <Seo />
-       <MobileMenu isOpen={isOpen} toggle={toggle} /> 
-       <Navbar toggle={toggle} /> 
-       <main>{children}</main> 
-       <Footer />
-
+      <MobileMenu isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }
-
 
 export default Layout

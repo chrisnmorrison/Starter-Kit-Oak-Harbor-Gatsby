@@ -15,7 +15,7 @@ const About = () => {
           layout="fixed"
           width={100}
           height={100}
-          alt="author"
+          alt="logo"
           className="img"
         />
         <p>Find the best free educational resoures on your favourite topic.</p>

@@ -27,9 +27,9 @@ const About = () => {
             <strong>Why Choose Us:</strong>
           </p>
           <ul>
-            {aboutList.map(item => {
+            {aboutList.map((item,i) => {
               return (
-                <li>
+                <li key={i}>
                   <img
                     aria-hidden="true"
                     loading="lazy"
@@ -58,7 +58,7 @@ const About = () => {
         <div className="image-box">
           <StaticImage
             src="../../assets/about1.jpg"
-            alt=""
+            alt="Picture of yard"
             width={1662}
             placeholder="blurred"
           />

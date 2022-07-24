@@ -52,7 +52,7 @@ const Service = () => {
       </div>
       <div className="service-card card1">
         <div className="card-content">
-          <StaticImage src="../../assets/icons/sustainable.png" width={80} />
+          <StaticImage src="../../assets/icons/sustainable.png" alt='sustainable icon' width={80} />
           <h3>
             Landscape
             <br aria-hidden="true" />
@@ -62,7 +62,7 @@ const Service = () => {
       </div>
       <div className="service-card card2">
         <div className="card-content">
-          <StaticImage src="../../assets/icons/grass.png" width={80} />
+          <StaticImage src="../../assets/icons/grass.png" alt='sustainable icon'  width={80} />
           <h3>
             Landscape
             <br aria-hidden="true" /> Management
@@ -71,7 +71,7 @@ const Service = () => {
       </div>
       <div className="service-card card3">
         <div className="card-content">
-          <StaticImage src="../../assets/icons/grow-plant.png" width={80} />
+          <StaticImage src="../../assets/icons/grow-plant.png" alt='sustainable icon'  width={80} />
           <h3>
             Plant & Tree
             <br aria-hidden="true" /> Solutions
@@ -80,7 +80,7 @@ const Service = () => {
       </div>
       <div className="service-card card4">
         <div className="card-content">
-          <StaticImage src="../../assets/icons/planter.png" width={80} />
+          <StaticImage src="../../assets/icons/planter.png" alt='sustainable icon'  width={80} />
           <h3>
             Landscape
             <br aria-hidden="true" /> Enhancements

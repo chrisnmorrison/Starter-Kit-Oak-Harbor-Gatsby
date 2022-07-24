@@ -8,19 +8,19 @@ const Portfolio = () => {
       <section id="portfolio">
         <div className="container">
           <div className="row">
-            <StaticImage
+            <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port1.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
             />
-           <StaticImage
+           <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port2.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
             />
-            <StaticImage
+            <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port3.jpg"
               placeholder="blurred"
               layout="fixed"
@@ -28,19 +28,19 @@ const Portfolio = () => {
             />
           </div>
           <div className="row">
-          <StaticImage
+          <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port4.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
             />
-            <StaticImage
+            <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port5.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
             />
-            <StaticImage
+            <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port6.jpg"
               placeholder="blurred"
               layout="fixed"
@@ -48,18 +48,18 @@ const Portfolio = () => {
             />
           </div>
           <div className="row">
-          <StaticImage
+          <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port7.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
             />
-           <StaticImage
+           <StaticImage alt='landscaping picture'
               src="../../assets/portfolio/port8.jpg"
               placeholder="blurred"
               layout="fixed"
               width={420}
-            /><StaticImage
+            /><StaticImage alt='landscaping picture'
             src="../../assets/portfolio/port9.jpg"
             placeholder="blurred"
             layout="fixed"
