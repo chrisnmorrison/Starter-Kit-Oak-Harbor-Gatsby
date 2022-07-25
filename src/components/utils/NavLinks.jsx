@@ -34,6 +34,11 @@ const Links = () => {
           Contact
         </Link>
       </li>
+      <li>
+        <Link activeClassName="active" to="/blog">
+          Blog
+        </Link>
+      </li>
     </>
   )
 }

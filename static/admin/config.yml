@@ -1,23 +1,40 @@
 backend:
-  name: test-repo
-media_folder: static/assets
-public_folder: /assets
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
-    media_folder: ""
-    public_folder: ""
+  - name: "blog"
+    label: "Blog"
+    folder: "content"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { label: "Featured Image", name: "image", widget: "image"}
-      - { name: date, label: Date, widget: datetime, date_format: "MMM Do, YYYY", time_format: false }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
           label: "Category",
           name: "category",
           widget: "select",
           options: ["Advice", "News", "Guide", "Other"],
         }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+      
+
