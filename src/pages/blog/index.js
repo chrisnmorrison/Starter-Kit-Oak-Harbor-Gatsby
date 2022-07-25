@@ -10,7 +10,7 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Latest Stories and News from our Blog" description="" />
-      <InnerHero pageName="Latest Stories" />
+      <InnerHero pageName="Latest News" />
         <section className="section">
           <div className="container">
             <div className="content">
