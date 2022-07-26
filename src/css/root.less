@@ -8,6 +8,7 @@
   :root {
     --primary: #209a26;
     --primary-light: #4dcb53;
+    --primary-darker: #1d8e22;
     --primary-dark: #0b470e;
     --primaryShade: #4aa24e;
     --primary-font: 'Montserrat','Poppins';
@@ -58,7 +59,7 @@
   p,
   li,
   a {
-    font-size: 18/16em;
+    font-size: 16/16em;
     line-height: 27/18em;
     margin: 0;
   }
@@ -103,10 +104,10 @@ margin-left: auto;
     padding: 0 30/14em;
     position: relative;
     z-index: 1;
-    background-color: var(--primary);
+    background-color: var(--primary-darker);
 
     // Transition Properties
-    color: whitesmoke;
+    color: white;
     transition: color 0.3s;
     transition-delay: 0.1s;
 
@@ -144,6 +145,16 @@ margin-left: auto;
   }
 }
 
+@media screen and (min-width: 500px){
+  p,
+  li,
+  a {
+    font-size: 18/16em;
+    line-height: 27/18em;
+    margin: 0;
+  }
+}
+
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
   body,
@@ -170,6 +181,8 @@ margin-left: auto;
   .page-link {
     line-height: 4rem;
   }
+
+
 
   .moon{
     filter: invert(1);
@@ -913,7 +926,7 @@ margin-left: auto;
           h2 {
             color: #fff;
             font-size: 18/16em;
-            line-height: 21/18;
+            
             margin-bottom: 37/18em;
             text-transform: uppercase;
             font-weight: 600;

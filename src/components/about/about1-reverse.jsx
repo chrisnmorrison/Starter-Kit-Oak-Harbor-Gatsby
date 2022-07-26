@@ -60,8 +60,9 @@ const AboutReverse = () => {
           <StaticImage
             src="../../assets/about2.jpg"
             alt="Landscaping picture"
-            width={1662}
+            width={800}
             placeholder="blurred"
+            loading="lazy"
           />
         </div>
       </div>

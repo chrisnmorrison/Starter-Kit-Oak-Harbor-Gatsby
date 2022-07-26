@@ -80,7 +80,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks />
             </ul>
           </nav>
- <button id="dark-mode-toggle">
+ <button id="dark-mode-toggle" aria-label='dark-mode-toggle'>
             <img
               className="moon"
               aria-hidden="true"
@@ -100,7 +100,7 @@ const Navbar = ({ toggle }) => {
               height={15}
             />
           </button>
-          <button className="toggle-btn hamburger-menu" onClick={toggle}>
+          <button className="toggle-btn hamburger-menu" onClick={toggle} aria-label='dark-mode-toggle'>
             <CgMenuLeft size={28} />
           </button>
          

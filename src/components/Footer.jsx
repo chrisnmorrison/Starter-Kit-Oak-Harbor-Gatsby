@@ -24,11 +24,11 @@ const Footer = () => {
         <div className="right-section">
           <div className="lists">
             <ul className="footer-links">
-              <h2>Information</h2>
+              <li><h2>Information</h2></li>
               <NavLinks className="page-link" />
             </ul>
             <ul>
-              <h2>Services</h2>
+              <li><h2>Services</h2></li>
               <li>Terrain Modification</li>
               <li>Custom Gardens</li>
               <li>Property Maintenance</li>
@@ -36,8 +36,8 @@ const Footer = () => {
               <li>Pathways & Patios</li>
               <li>Hedges</li>
             </ul>
-            <ul>
-              <h2>Contact</h2>
+            <ul><li>  <h2>Contact</h2></li>
+            
               <li>
                 <a href="/contact.html">
                   123 Address St
@@ -80,7 +80,6 @@ export const FooterStyles = styled.footer`
     list-style: none;
     margin-bottom: 0.66666667em;
     color: #fff;
-    font-size: 105% !important;
     opacity: 0.9;
   }
 `

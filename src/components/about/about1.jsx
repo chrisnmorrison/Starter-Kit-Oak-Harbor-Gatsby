@@ -59,8 +59,9 @@ const About = () => {
           <StaticImage
             src="../../assets/about1.jpg"
             alt="Picture of yard"
-            width={1662}
+            width={800}
             placeholder="blurred"
+            loading="lazy"
           />
         </div>
 

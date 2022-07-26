@@ -2,9 +2,11 @@ import React from 'react'
 import {FaLeaf} from 'react-icons/fa'
 import {GiGardeningShears} from 'react-icons/gi'
 import {MdEvent} from 'react-icons/md'
+import styled from 'styled-components'
 
 const Services = () => {
   return (
+    <Wrapper>
     <section id="services" className="services">
     <div className="card">
         <picture>
@@ -34,7 +36,14 @@ const Services = () => {
         </p>
     </div>
 </section>
+</Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  p{
+    color: #0c0c0c;
+  }
+`
 
 export default Services

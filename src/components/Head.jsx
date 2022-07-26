@@ -6,7 +6,11 @@ import siteIcon from '../assets/gatsby-icon.png'
 const Head = () => {
   return (
     <>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
         <link
           rel="icon"
           type="image/png"
@@ -14,7 +18,6 @@ const Head = () => {
           sizes="16x16"
           alt="Site icon"
         />
-
         <style>
           {`
 
