@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+// import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRollTemplate extends React.Component {
   render() {
@@ -82,18 +82,26 @@ const Wrapper = styled.div`
 
   .blog-list-item header {
     display: flex;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.75em;
   }
 
   .post-meta {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid #e7e7e7;
   }
 
   .post-meta a {
     font-weight: 500;
-    color: var(--primary-dark);
+    color: var(--primaryShade);
     font-size: 1.4em;
+    transition: color 0.1s ease-in-out;
+
+    &:hover{
+          color: var(--primary);
+
+        }
   }
 
   .post-meta span {
@@ -112,24 +120,25 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 430px) {
     .blog-list-item {
-  padding: 1.4rem;
-  margin-bottom: 1.4rem;
-}
+      padding: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
     .post-meta {
-
-      a{
+      a {
         font-weight: 500;
-  color: var(--primary-dark);
-  font-size: 1em;
-  margin-bottom: .5em;
+        color: var(--primary);
+        font-size: 1em;
+        margin-bottom: 0.5em;
+
+        
       }
-  span{
-    font-size: 70%;
-  }
-}
-.excerpt{
-  font-size: 1em;
-}
+      span {
+        font-size: 70%;
+      }
+    }
+    .excerpt {
+      font-size: 1em;
+    }
   }
 `
 
@@ -159,7 +168,6 @@ export default function BlogRoll() {
                 frontmatter {
                   title
                   templateKey
-                  featuredimage
                   date(formatString: "MMM DD, YYYY")
                 }
               }

@@ -1,6 +1,6 @@
 import React from 'react'
-import heroImg from '../../assets/cabinets2.jpg'
-import heroImgMob from '../../assets/cabinets2-m.jpg'
+import heroImg from '../../assets/inner-hero.jpg'
+import heroImgMob from '../../assets/inner-hero-m.jpg'
 
 
 const InnerHero = (props) => {

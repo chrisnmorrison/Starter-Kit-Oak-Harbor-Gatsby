@@ -149,7 +149,7 @@ const ContactForm = () => {
             >
               Static Forms
             </a>. </p>
-            <p className="note">Your information is not stored, per <a href="https://www.staticforms.xyz/privacy" target="_blank" rel="noopener noreferrer">Static Form's Privacy Policy</a>. It is only forwarded to our email, <a href="mailto:email@email.com">email@email.com</a>.</p>
+            <p className="note">The information you submit in this form <u>is not stored</u>, per <a href="https://www.staticforms.xyz/privacy" target="_blank" rel="noopener noreferrer">Static Form's Privacy Policy</a>. it is directly forwarded to our email.</p>
          
         </section>
       </div>

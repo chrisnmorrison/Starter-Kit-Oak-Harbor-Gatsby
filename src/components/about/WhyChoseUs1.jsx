@@ -88,7 +88,7 @@ const Wrapper = styled.section`
   }
 
   .grid-item-right {
-    border-left: 1px solid var(--primary-light);
+    border-left: 1px solid var(--primary);
   }
 
   .grid-item-title {
