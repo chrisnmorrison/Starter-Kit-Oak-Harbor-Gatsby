@@ -116,9 +116,7 @@ const Wrapper = styled.section`
       font-size: 36px;
     }
 
-    p{
-      color: #242424;
-    }
+
 
     h2,
     p {

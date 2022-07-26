@@ -42,7 +42,7 @@ const Services = () => {
 
 const Wrapper = styled.div`
   p{
-    color: #0c0c0c;
+    color: #0c0c0c !important;
   }
 `
 
