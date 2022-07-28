@@ -18,6 +18,7 @@ const Head = () => {
           sizes="16x16"
           alt="Site icon"
         />
+        <link rel="apple-touch-icon" href={siteIcon} />
         <style>
           {`
 
