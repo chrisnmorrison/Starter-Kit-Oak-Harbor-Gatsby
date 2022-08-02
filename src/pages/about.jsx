@@ -10,7 +10,7 @@ import Cta from '../components/cta/cta1'
 const about = () => {
   return (
     <Layout>
-      <Seo title="About Us" description="" />
+      <Seo title="About Us" description="Terra has proudly been operating in North Grenville since 1991." />
       <InnerHero pageName="About Us" />
       <About />
       <Vision />

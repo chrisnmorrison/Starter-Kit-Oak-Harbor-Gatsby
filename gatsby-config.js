@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Small Business',
     titleTemplate: '%s - Terra - Proudly serving Kemptville since 1991',
-    description: 'Insert business description here',
+    description: 'Terra is a North Grenville landscaping business, proudly operating since 1991',
     url: 'https://terra-demo-v2.netlify.app', // No trailing slash allowed!
     image: '/logo.png', // Path to the image placed in the 'static' folder, in the project's root directory.
     twitterUsername: '',

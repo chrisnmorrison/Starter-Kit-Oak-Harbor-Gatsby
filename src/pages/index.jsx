@@ -8,15 +8,17 @@ import AboutReverse from '../components/about/about1-reverse'
 import Cta from '../components/cta/cta1'
 
 const IndexPage = () => {
-
   return (
     <Layout>
-       <Seo title="Home" description=""/>
+      <Seo
+        title="Home"
+        description="Welcome to Terra Landscaping, North Grenville's best landscaping company. We offer a wide variety of landscaping services, including exterior, interior, ponds, pathways, and yard transformation"
+      />
       <Hero />
-      <Services/>
-      <About/>
-      <AboutReverse/>
-      <Cta/>
+      <Services />
+      <About />
+      <AboutReverse />
+      <Cta />
     </Layout>
   )
 }

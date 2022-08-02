@@ -9,7 +9,7 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo title="Latest Stories and News from our Blog" description="" />
+        <Seo title="Latest Stories and News from our Blog" description="Latest Stories and News from our Blog at Terra Landscaping, proudly operating in North Grenville" />
       <InnerHero pageName="Latest News" />
         <section className="section">
           <div className="container">

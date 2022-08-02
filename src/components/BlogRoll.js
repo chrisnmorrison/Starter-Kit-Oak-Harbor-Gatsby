@@ -15,7 +15,7 @@ class BlogRollTemplate extends React.Component {
           <div className="row">
             {posts &&
               posts.map(({ node: post }) => (
-                <div className="is-parent column col-12 col-md-6" key={post.id}>
+                <div className="is-parent column col-12 col-md-6 px-5" key={post.id}>
                   <article
                     className={`blog-list-item tile is-child box notification ${
                       post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -53,7 +53,7 @@ class BlogRollTemplate extends React.Component {
                     </header>
                     <p className="excerpt">{post.excerpt}</p>
                     <Link className="button-solid" to={post.fields.slug}>
-                      Keep Reading →
+                      Read Full Article →
                     </Link>
                   </article>
                 </div>
@@ -69,7 +69,12 @@ const Wrapper = styled.div`
   .blog-list-item {
     padding: 2rem;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .column{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   .posts-list {
@@ -160,7 +165,7 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 140)
                 id
                 fields {
                   slug

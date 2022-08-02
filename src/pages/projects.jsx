@@ -11,7 +11,7 @@ const Projects = () => {
     <Layout>
       <Seo
         title="Projects"
-        description=""
+        description="View our successful landscaping projects completed in North Grenville"
       />
             <InnerHero pageName='Projects'/>
 
