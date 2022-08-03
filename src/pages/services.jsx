@@ -4,7 +4,7 @@ import Seo from '../components/SEO'
 import Service from '../components/services/services2'
 import InnerHero from '../components/hero/InnerHero'
 import Cta from '../components/cta/cta1'
-import WhyChooseUs2 from '../components/about/WhyChoseUs2'
+import WhyChooseUs2 from '../components/about/WhyChooseUs2'
 
 const Services = () => {
   return (

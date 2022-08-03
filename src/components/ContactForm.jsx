@@ -272,7 +272,7 @@ const Wrapper = styled.div`
     width: 100%;
     text-align: center;
     line-height: 21px;
-    font-size: .9em;
+    font-size: 1.125em;
   }
 
   @media only screen and (max-width: 690px) {

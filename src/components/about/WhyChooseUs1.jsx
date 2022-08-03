@@ -2,15 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import house from '../../assets/icons/happy-house.png'
 import supplier from '../../assets/icons/supplier.png'
+import lawn from '../../assets/portfolio/port12.jpg'
 
 const Vision = () => {
   return (
     <Wrapper>
       <div className="container">
         <div className="row">
+          <img
+            src={lawn}
+            alt="picture of nicely trimmed lawn"
+            class="why-mob-img"
+            loading="lazy"
+          />
+        </div>
+        <div className="row">
           <div className="col grid">
             <div className="grid-item grid-item-title">
-              {' '}
               <div className="title">
                 <h2>Why choose us?</h2>
               </div>
@@ -62,6 +70,10 @@ const Wrapper = styled.section`
   .title {
     font-size: 2rem;
     margin: 0 auto;
+  }
+
+  .why-mob-img {
+    display: none;
   }
 
   .about-icon {
@@ -132,9 +144,16 @@ const Wrapper = styled.section`
 
   @media screen and (max-width: 767px) {
     text-align: center;
+    .why-mob-img {
+      width: 70vw;
+      margin: 0 auto 1rem;
+      text-align: center;
+      display: block;
+    }
 
     .about-icon {
-      display: none;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
     }
 
     .col {
@@ -157,10 +176,12 @@ const Wrapper = styled.section`
     }
     .grid-item {
       padding: 0;
+      flex-direction: column;
+      max-width: 90vw;
     }
 
-    .grid-item-title {
-      margin: 0 auto;
+    .grid-item-right {
+      margin-bottom: 1.25rem;
     }
 
     .title {
@@ -177,6 +198,7 @@ const Wrapper = styled.section`
       position: absolute;
       content: '';
       background-color: var(--primary-light);
+      opacity: 0.6;
       width: 104%;
       height: 6px;
       left: 0;
@@ -188,6 +210,7 @@ const Wrapper = styled.section`
       position: absolute;
       content: '';
       background-color: var(--primary-light);
+      opacity: 0.6;
       width: 109%;
       height: 6px;
       left: 0;
@@ -197,16 +220,24 @@ const Wrapper = styled.section`
   }
 
   @media screen and (max-width: 463px) {
-    h2{
-    font-size: 100%;
+    .col {
+      grid-template-rows: 0.3fr 1fr 1fr;
     }
-    h3{
+
+    h2 {
+      font-size: 100%;
+    }
+    h3 {
       font-size: 96%;
     }
 
-    .vision h3::after,.mission h3::after{
-        height: 4px;
-      
+    .why-mob-img {
+      width: 85vw;
+    }
+
+    .vision h3::after,
+    .mission h3::after {
+      height: 4px;
     }
   }
 `

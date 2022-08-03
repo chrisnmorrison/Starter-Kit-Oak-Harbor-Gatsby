@@ -72,8 +72,8 @@ const WhyChooseUs2 = () => {
         <div className="row first">
           <div className="col-12 col-md-6 row title-row">
             <div className="title">
-              <h5>Why Choose Us</h5>
-              <h3>Trusted Experts in North Grenville</h3>
+              <h5>Expert Landscapers</h5>
+              <h3>Trusted in North Grenville</h3>
             </div>{' '}
             <div className="title-icon-container">
               <img className="title-icon" src={leaf} alt='leaf icon in title'/>
@@ -135,7 +135,7 @@ const Wrapper = styled.section`
     }
 
     h3 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
 
@@ -240,7 +240,7 @@ const Wrapper = styled.section`
     border-radius: 7px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
   }
   .why-block .icon-box {
     position: relative;
