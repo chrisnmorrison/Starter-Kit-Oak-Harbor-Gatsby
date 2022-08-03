@@ -11,7 +11,7 @@ const Vision = () => {
         <div className="row">
           <img
             src={lawn}
-            alt="picture of nicely trimmed lawn"
+            alt="nicely trimmed lawn"
             class="why-mob-img"
             loading="lazy"
           />
@@ -20,7 +20,7 @@ const Vision = () => {
           <div className="col grid">
             <div className="grid-item grid-item-title">
               <div className="title">
-                <h2>Why choose us?</h2>
+                <h2>We know <br aria-hidden='true'/>Landscaping</h2>
               </div>
             </div>
 
@@ -70,6 +70,7 @@ const Wrapper = styled.section`
   .title {
     font-size: 2rem;
     margin: 0 auto;
+    text-align: center;
   }
 
   .why-mob-img {

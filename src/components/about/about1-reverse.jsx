@@ -27,9 +27,9 @@ const AboutReverse = () => {
             have evolved with native plant species and are best able to use the
             fruits and nectars these plants and trees provide.
           </p>
-          <p>
-            <strong>Sustainable practices result in:</strong>
-          </p>
+          <h3 style={{marginBottom:'1rem'}}>
+            Sustainable practices result in:
+          </h3>
           <ul>
             {aboutList.map((item,i) => {
               return (

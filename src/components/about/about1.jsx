@@ -23,9 +23,9 @@ const About = () => {
             process is smooth and seamless, from initial concept to project
             completion.
           </p>
-          <p>
-            <strong>Why Choose Us:</strong>
-          </p>
+          <h3 style={{marginBottom:'1rem'}}>
+            Why Choose Us:
+          </h3>
           <ul>
             {aboutList.map((item,i) => {
               return (
