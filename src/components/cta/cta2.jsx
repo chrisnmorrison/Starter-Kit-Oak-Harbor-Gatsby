@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     height: 200px;
     width: 100%;
     background: var(--primary);
-    clip-path: polygon(0 85%, 0 100%, 100% 100%, 100% 85%, 50% 98%);
+    clip-path: polygon(0 85%, 0 100%, 100% 100%, 100% 85%, 50% 97%);
     position: absolute;
     top: -199px;
   }

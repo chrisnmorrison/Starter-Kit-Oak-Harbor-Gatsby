@@ -186,7 +186,7 @@ const Wrapper = styled.section`
     }
 
     .title {
-      margin: 0 auto;
+      margin: 0 auto 1.5rem;
     }
 
     h3 {

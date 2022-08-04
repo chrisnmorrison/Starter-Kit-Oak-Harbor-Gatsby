@@ -42,7 +42,11 @@ const Services = () => {
 
 const Wrapper = styled.div`
   p{
-    color: #0c0c0c !important;
+    color: #3a3a3a ;
+  }
+
+  body.dark-mode p{
+    color: #fff ;
   }
 `
 

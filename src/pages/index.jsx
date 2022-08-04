@@ -12,7 +12,7 @@ const IndexPage = () => {
     <Layout>
       <Seo
         title="Home"
-        description="Welcome to Terra Landscaping, North Grenville's best landscaping company. We offer a wide variety of landscaping services, including exterior, interior, ponds, pathways, and yard transformation"
+        description="We are Terra, North Grenville's best landscaping company. Offering all landscaping services, including exterior, pathways, and yard transformation"
       />
       <Hero />
       <Services />

@@ -66,13 +66,11 @@ export default SEO
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
   article: PropTypes.bool,
 }
 SEO.defaultProps = {
   title: null,
   description: null,
-  image: null,
   article: false,
 }
 const query = graphql`
@@ -84,7 +82,6 @@ const query = graphql`
         url
         twitterUsername
         titleTemplate
-        image
       }
     }
   }

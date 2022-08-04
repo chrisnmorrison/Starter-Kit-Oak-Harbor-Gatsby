@@ -68,16 +68,21 @@ text-align: center;
     ul{
       margin-bottom: 1rem;
     }
+
+    img{
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 
 
 .content{
   margin: 4rem auto;
   max-width: 1200px;
-
+  padding: 0 1.5rem;
 }
 
-p{
+p,ul,ol{
   margin-bottom: 1rem;
 }
 
@@ -119,8 +124,8 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
  
-  const description = post.html.replace(/<[^>]*>/g, '');
-  console.log(description);
+  let description = post.html.replace(/<[^>]*>/g, '');
+  description = description.substring(0, 160);
   return (
     <Layout>
       <BlogPostTemplate

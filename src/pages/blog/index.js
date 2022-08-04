@@ -16,6 +16,7 @@ export default class BlogIndexPage extends React.Component {
             <div className="content">
               <BlogRoll />
             </div>
+
           </div>
         </section>
       </Layout>

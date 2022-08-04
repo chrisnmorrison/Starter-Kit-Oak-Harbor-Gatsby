@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import About from './About'
-import SidebarCategories from './SidebarCategories'
 import './sidebar-styles.scss'
 
 const Sidebar = () => {
@@ -9,7 +8,6 @@ const Sidebar = () => {
     <div className="col-lg-4 col-12">
       <SidebarStyles>
         <About />
-        <SidebarCategories />
       </SidebarStyles>
     </div>
   )

@@ -159,26 +159,28 @@ export default function BlogRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query BlogRollQuery {
-          allMarkdownRemark(
-            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 140)
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  templateKey
-                  date(formatString: "MMM DD, YYYY")
-                }
+      query BlogRollQuery {
+        allMarkdownRemark(
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+          sort: {fields: frontmatter___date, order: DESC}
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 140)
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                date(formatString: "MMM DD, YYYY")
               }
             }
           }
         }
+      }
+      
       `}
       render={(data, count) => <BlogRollTemplate data={data} count={count} />}
     />

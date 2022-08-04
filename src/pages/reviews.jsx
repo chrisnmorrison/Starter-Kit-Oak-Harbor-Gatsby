@@ -6,6 +6,8 @@ import unisexAvatar from '../assets/unisex_avatar.jpg'
 import { reviews } from '../components/reviews/reviewList'
 import stars from '../assets/stars.svg'
 import Cta from '../components/cta/cta1'
+import WhyChooseUs from '../components/about/WhyChooseUs3'
+
 
 const Reviews = () => {
 
@@ -60,6 +62,7 @@ const Reviews = () => {
           
         </div>
       </section>
+      <WhyChooseUs/>
       <Cta/>
     </Layout>
   )
