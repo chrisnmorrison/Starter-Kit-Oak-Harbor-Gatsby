@@ -15,7 +15,7 @@ class BlogRollTemplate extends React.Component {
           <div className="row">
             {posts &&
               posts.map(({ node: post }) => (
-                <div className="is-parent column col-12 col-md-6 px-5" key={post.id}>
+                <div className="is-parent column col-12 col-md-6 col-lg-4 px-5" key={post.id}>
                   <article
                     className={`blog-list-item tile is-child box notification ${
                       post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -70,6 +70,7 @@ const Wrapper = styled.div`
     padding: 2rem;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     margin-bottom: 3rem;
+    
   }
 
   .column{
@@ -102,7 +103,7 @@ const Wrapper = styled.div`
     color: var(--primaryShade);
     font-size: 1.4em;
     transition: color 0.1s ease-in-out;
-
+    min-height: 7.4rem;
     &:hover{
           color: var(--primary);
 
