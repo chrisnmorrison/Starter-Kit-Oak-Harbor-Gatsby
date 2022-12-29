@@ -147,7 +147,7 @@ const Wrapper = styled.section`
 
   .title-icon-container::before {
     position: absolute;
-    right: -1rem;
+    /* right: -1rem; */
     top: -8px;
     content: '';
     background-color: var(--primary);
